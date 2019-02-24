@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UsersAPI.Models;
 using UsersAPI.Repository;
@@ -7,6 +8,7 @@ using UsersAPI.Repository;
 namespace UsersAPI.Controllers
 {
   [Route("api/[Controller]")]
+  [Authorize()]
 
   public class UsersController : Controller
   {
